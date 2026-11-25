@@ -1,0 +1,1 @@
+fetch('/api/store').then(r=>r.json()).then(d=>{const n=d.settings?.whatsapp;if(n){const a=document.getElementById('contactWhatsApp');if(a)a.href='https://wa.me/'+String(n).replace(/\\D/g,'')}}).catch(()=>{});
